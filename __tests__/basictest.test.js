@@ -6,3 +6,8 @@ test("Math.sqrt works for perfect squares", () => {
     expect(Math.sqrt(1)).toBe(1)
     expect(Math.sqrt(0)).toBe(0)
 })
+
+// Basic structure
+// test("Description", () => {
+//    expect(function(arg1, arg2, ..., argN)).toBeSomething()
+//  })
