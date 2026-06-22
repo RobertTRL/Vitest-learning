@@ -8,3 +8,7 @@ test.for([
 ])("The sum of %i and %i is %i", ([a, b, sum]) => {
     expect(a + b).toBe(sum)
 })
+
+// %i integer
+// %s string 
+// %f float
