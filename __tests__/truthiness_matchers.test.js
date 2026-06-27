@@ -8,7 +8,7 @@ import { test, describe, expect } from "vitest"
 // 5) .toBeFalsy -> matches anything that an if statement would treat as false / falsy values
 // 
 // Note:
-// Falsy values - false, 0, +0, -0, 0n, 0.0 (Any and all variations of the number 0), "", '', `` (Any empty string), null, undefined, NaN, document.all
+// Falsy values - false, 0, +0, -0, 0n, 0.0 (Any and all variations of the number zero), "", '', `` (Any empty string), null, undefined, NaN, document.all
 // Truthy values - any value that is not a falsy value
 // null and undefined are nullish values
 
@@ -24,4 +24,11 @@ describe("Truthiness Matchers", () => {
 
 })
 
+  test('zero', () => {
+  const z = 0
+
+  expect(z).toBeDefined()
+  expect(z).toBeFalsy()
+  expect(z).not.toBeNull()
+})
 })
